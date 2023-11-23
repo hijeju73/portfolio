@@ -1,0 +1,10 @@
+/* 오시는길 본문 css */
+
+#footerArea{margin-top: 80px;}
+
+#content .map{margin: 50px 0 100px 0}
+#content .map .map_plus{margin: 80px;}
+#content .map .map_plus li{list-style: none; margin-top: 30px; position: relative;}
+#content .map .map_plus p{font-size: 1.2em; position: absolute; left: 70px; margin-top: -30px;}
+
+#content .map_plus img{width: 400px; margin: -200px 650px;}

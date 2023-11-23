@@ -1,0 +1,66 @@
+/* 주요직무 본문 css */
+
+
+#content dl dt{font-size: 1.8em; font-weight: bold; margin-top: 30px;}
+#content dl dd{font-size: 1.2em; margin-top: 30px;}
+
+#content dl dd:nth-of-type(4){margin-bottom: 200px;}
+
+#content dl:nth-of-type(1){margin-top: 130px; text-align: center;}
+#content dl:nth-of-type(2){margin-top: 600px; text-align: center;}
+
+.img img:nth-of-type(1){left: 34%; top: 1250px; position: absolute;}
+
+.img img {
+    width: 600px;
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+   
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  .img img:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+  
+
+  #content .container img {
+    width: 400px;
+    height: 100%;
+    object-fit:cover;
+    position: relative;
+    margin: 100px 0 350px 0;
+    left: 50%;
+    
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+  }
+  #content .container {
+    max-width:600px;
+    max-height:350px;
+    
+    
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    
+  }
+  #content .container:hover img {
+    opacity:0.3;
+  }
+  #content .container img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }

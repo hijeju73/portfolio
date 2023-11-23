@@ -1,0 +1,140 @@
+.es_sola ul li p{font-size: 1.2em; text-align: center;}
+.es_sola ul li p:nth-of-type(1){margin-top: 80px; font-size: 1.8em; font-weight: bold; text-align: center;}
+.es_sola ul li p:nth-of-type(2){margin-top: 80px;}
+.es_sola ul li p:nth-of-type(3){margin-top: 50px;}
+.es_sola ul li p:nth-of-type(4){margin-top: 50px;}
+.es_sola ul li p:nth-of-type(5){margin-top: 50px;}
+
+#content .olcards{left: 500px;}
+
+
+#footerArea{position: relative; margin-top: 200px;}
+
+.a {
+	width:395px; 
+	height:200px;
+	overflow:hidden;
+	background-image:url(../images/content3/fr.jpg);
+  position:relative;
+  margin:auto;
+  top:130px;
+  bottom:0;
+  left:-250px;
+  right:0;
+  box-shadow:0 0 5px .2px #333
+}		
+.b {
+	width:0; 
+	height:276px;
+	overflow:hidden;
+	margin-left:-50px;
+	transform:skew(-20deg);
+	transition:width 1s ease;
+}		
+.a:hover .b {
+	width:574px;
+}
+.c {
+	width:574px; 
+	height:276px;
+	transform:skew(20deg);
+	margin-left:-64px;
+	background-image:url(../images/content3/ba.jpg);
+	background-position:114px 0;
+}		
+
+
+
+
+  
+  .olcards {
+    list-style: none;
+    counter-reset: cardCount;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    --cardsGap: 1rem;
+    gap: var(--cardsGap);
+    padding-bottom: var(--cardsGap);
+    margin-left: 50%;
+    margin-top: -10%;
+  }
+  .olcards li {
+    counter-increment: cardCount;
+    display: flex;
+    color: white;
+    --labelOffset: 1rem;
+    --arrowClipSize: 1.5rem;
+    margin-top: var(--labelOffset);
+  }
+  
+  .olcards li::before {
+    content: counter(cardCount, decimal-leading-zero);
+    background: white;
+    color: var(--cardColor);
+    font-size: 2em;
+    font-weight: 700;
+    transform: translateY(calc(-1 * var(--labelOffset)));
+    margin-right: calc(-1 * var(--labelOffset));
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0.5em;
+  }
+  
+  .olcards li .content {
+    background-color: var(--cardColor);
+    --inlinePadding: 1em;
+    --boxPadding: 0.5em;
+    display: grid;
+    padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+      var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+    grid-template-areas:
+      "icon title"
+      "icon text";
+    gap: 0.25em 1em;
+    clip-path: polygon(
+      0 0,
+      calc(100% - var(--arrowClipSize)) 0,
+      100% 50%,
+      calc(100% - var(--arrowClipSize)) 100%,
+      calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+      0 calc(100% + var(--cardsGap))
+    );
+    position: relative;
+  }
+  .olcards li .content::before {
+    content: "";
+    position: absolute;
+    width: var(--labelOffset);
+    height: var(--labelOffset);
+    background: var(--cardColor);
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    filter: brightness(0.75);
+  }
+  .olcards li .content::after {
+    content: "";
+    position: absolute;
+    height: var(--cardsGap);
+    width: var(--cardsGap);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent 50%);
+    left: 0;
+    top: 100%;
+  }
+  .olcards li .icon {
+    grid-area: icon;
+    align-self: center;
+    font-size: 2em;
+  }
+  .olcards li .content .title {
+    grid-area: title;
+    font-size: 1.25em;
+    /* font-weight: 700; */
+  }
+  .olcards li .content .text {
+    grid-area: text;
+  }
+  

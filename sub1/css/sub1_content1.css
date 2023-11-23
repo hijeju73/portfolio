@@ -1,0 +1,30 @@
+/* 회사소개 본문 css */
+
+#content .content_area{}
+#content .content_area .info p{color: #fff; font-size: 1.5em; position: absolute; text-align: center; margin: 120px;}
+#content .content_area ul li img{float: left; margin: 50px;}
+#content .content_area ul li img:nth-of-type(2){margin-left: 50%;}
+
+#content .corp_infoInner img{margin: 50px 0 50px 100px}
+#content .corp_info span{font-size: 1.2em; color: #007dc6;}
+#content .corp_info{padding: 150px 0;}
+#content .corp_info div:nth-of-type(1){position: relative; margin-bottom: 150px; overflow: hidden; width: 2000px; left: 50%; margin-left: -1000px; top: 0;}
+#content .corp_info div:nth-of-type(1) img{transition: all .5s ease;}
+#content .corp_info div:nth-of-type(1) p{position: absolute; left: 50%; margin-left: -1000px; text-align: center; z-index: 10; color: #fff; font-size: 1.750em; background: rgba(0,0,0,.2); width: 2000px; height: 350px; top: 0; padding-top: 120px; box-sizing: border-box; transition: all .5s ease;}
+#content .corp_info div:nth-of-type(1):hover img{transform: scale(1.1);}
+#content .corp_info dl{overflow: hidden; position: relative; margin-bottom: 50px;}
+#content .corp_info dl:nth-of-type(2){width: 1200px;margin: 0 auto 50px; background: #f7f7f7;}
+#content .corp_info dt{font-size: 1.750em; font-weight: 700; text-align: center;}
+#content .corp_info dd{font-size: 1.250em; text-align: center; width: 500px;}
+#content .corp_info dl dt{position: absolute; top: 50px; left: 670px;}
+#content .corp_info dl dd{position: absolute; top: 210px; left: 685px;}
+#content .corp_info dl:nth-of-type(1){background: url(../images/content1/con1.jpg) no-repeat; background-position: left center; width: 1200px; height: 400px;}
+#content .corp_info dl:nth-of-type(2){background: url(../images/content1/con2.jpg) no-repeat; background-position: right center; width: 1200px; height: 400px;}
+#content .corp_info dl:nth-of-type(3){background: url(../images/content1/con3.jpg) no-repeat; background-position: left center; width: 1200px; height: 400px;}
+#content .corp_info dl:nth-of-type(2) dt{position: absolute; top: 50px; left: 65px;}
+#content .corp_info dl:nth-of-type(2) dd{position: absolute; top: 170px; left: 30px;}
+#content .corp_info dl:nth-of-type(3) dd{top: 120px;  top: 170px;}
+#content .corp_info dl:nth-of-type(3) dt{margin-left: 40px;}
+#content .corp_info dl:nth-of-type(2) img{float: right;}
+#content .corp_info dl:nth-of-type(2) img::after{content: ""; display: block; clear: both;}
+

@@ -1,0 +1,195 @@
+/* index css */
+.visual{width: 2000px; height: 950px; position: relative;
+    left:50%; margin-left: -1000px;} 
+.visual img{width:100%; position:  relative;
+left: 50%; margin-left: -1000px; top: 0;}
+
+.visual p
+{font-size: 4em;
+font-weight: 700;
+padding: 15px;
+margin-left: -5px;
+position: absolute; left: 350px; top: 200px;}
+
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:950px;}
+.gallery li{display:none; position: relative;}
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.gallery li span{position: absolute; left:0; top: 500px; opacity: 0; display: block; text-align: center; width: 100%; 
+    font-size: 50px; color: #fff;  }
+
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+
+.dock{width:330px; position:absolute;left: 50%;
+  margin-left: -200px; bottom: 200px;}
+
+.dock .mbutton { margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:50px; height:5px;
+   background: #fff; border-radius:3px;
+  transition: all .5s}
+
+.dock .ps{ cursor:pointer; 
+    display:block; float:left; width:25px; height:25px;margin-top: -12px;
+    }
+.dock .ps i{font-size: 30px; color: #fff;}   
+
+.visual .btn{display: block;background: rgba(255,255,255,.3);
+        position: absolute;  top:450px; cursor:pointer;left:50%; opacity: .6; transition: all .5s;}
+.visual .btn:hover{opacity: .8;background:#007dc6}
+.visual .btn span {font-size: 4em;padding: 20px 10px; color: #fff;}        
+.visual .btnLeft{ margin-left: -900px;}
+.visual .btnLeft span{padding:20px 0 20px 20px;}
+.visual .btnRight{margin-left: 800px;}    
+
+
+
+
+#content{width: 100%;}
+
+#content .vision{
+width: 1200px;
+overflow: hidden;
+margin: 0 auto;
+position: relative;
+margin-bottom: 150px;
+}
+
+#content .vision h3{font-size: 3.125em; margin: 100px 0 60px; text-align: center;}
+#content .vision ul{overflow: hidden; padding: 20px 0;}
+#content .vision li{width:283px; height: 420px; overflow: hidden; float: left; margin-right: 20px;
+     position: relative; box-shadow: 2px 2px 15px 2px rgba(0,0,0,.2);transition: all .5s ease;}
+#content .vision li:hover{box-shadow: 2px 2px 20px 2px rgba(0,0,0,.6);}
+#content .vision li:last-child{margin-right: 0;}
+#content .vision li>img{transition: all .5s ease;}
+#content .vision li:hover > img{filter: brightness(40%); transform: scale(1.1);}
+#content .vision li h4{font-size:1.75em; color: #fff; position: absolute; left:0; top:180px; width: 100%; text-align: center; transition: all .5s ease;}
+#content .vision li:hover h4{top:70px}
+#content .vision li p{position: absolute; left:0; top:160px;text-align: justify; line-height: 1.5em;
+        margin: 0 40px; color: #fff; opacity: 0; transition: all .5s ease;}
+#content .vision li:hover p{opacity: 1;}
+#content .vision li a{position: absolute; right: 0; bottom: 0;transition: all .5s ease;
+   transition-delay: .5s; opacity: 0;}
+#content .vision li:hover a{opacity: 1;}
+
+/* 비즈니스 */
+#content .business{
+width: 2000px;
+height: 750px;
+position: relative;
+left:50%; margin-left: -1000px;
+margin-bottom: 150px;
+background: url(../images/vision_back_02.jpg);}
+#content .business div:nth-of-type(1){position: absolute; left:50%;top:230px; margin-left: -500px;}
+#content .business div:nth-of-type(2){position: absolute; left:50%;top:450px; margin-left: 220px;}
+#content .business h4{font-size: 2.375em;}
+#content .business p{font-size: 1.688em; margin-bottom: 15px;}
+#content .business a{padding: 8px 0; width: 120px; text-align: center; background: #00a650;
+ color: #fff;border: 2px solid rgba(0,166,80,0); border-radius: 10px; transition: all .5s;}
+ #content .business a:hover{background: #fff; color:#00a650;border: 2px solid rgba(0,166,80,1);}
+/* pr센터 */
+#content .pr_center{width: 1200px; margin: 0 auto;}
+#content .pr_center h3{font-size: 3.125em; margin: 100px 0 60px; text-align: center;}
+#content .pr_center p{font-size: 1.688em; text-align: center; line-height: 1.5em; margin-bottom: 50px;}
+#content .pr_center p span{font-size: 2rem;font-weight: 600; color: #00a650;}
+#content .pr_center ul{overflow: hidden; padding: 20px 0; margin-left: 50px; margin-bottom: 100px;} 
+#content .pr_center li{width: 230px; float: left; margin-left: 40px; text-align: center;}
+#content .pr_center li:last-child{margin-right: 0;}
+#content .pr_center li span{display: block; width: 230px; height: 230px; border-radius: 50%;
+  background: #fff; transition: all .5s;}
+  #content .pr_center li:hover span{ background: #007dc6; color: #fff;
+   box-shadow: 2px 2px 15px 2px rgba(0,0,0,.5);}
+  #content .pr_center li i{font-size: 130px; margin-top: 50px;}
+  #content .pr_center li strong{display: block;font-size: 1.2em;margin: 15px 0;}
+  #content .pr_center li:hover strong{color: #007dc6;}
+
+/* 뉴스 */
+#content .news{
+        width: 100%;position: relative;overflow: hidden;background: #f8f8f8;}
+#content .news .news_inner{width: 1200px; margin: 0 auto;}      
+#content .news h3{font-size: 9.375em; margin: 100px 0 50px; text-align: center;
+        background: linear-gradient( #007dc6, #00a650);
+        color: transparent;-webkit-background-clip: text;}
+#content .news ul{overflow: hidden;padding: 15px 10px; margin-bottom: 100px;}
+#content .news li{float: left; text-align: center;margin-right: 10px; overflow: hidden;box-shadow: 2px 2px 5px 1px rgba(0,0,0,.2); transition: all .5s;}
+#content .news li:hover{box-shadow: 2px 2px 15px 1px rgba(0,0,0,.4);
+   background: #00a650; }
+#content .news li:hover a{color: #fff; }
+#content .news li:hover a p span{color: #fff;}
+#content .news li:last-child{margin-right: 0;}
+#content .news li p{line-height: 1.5em; margin: 20px 0 40px; font-weight: bo;}
+#content .news li span{font-size: .9em; color:#999; display: block;} 
+#content .news li img{transition: all .5s; }
+#content .news li:hover img{transform: scale(1.05);}
+#content .news .quick span{font-size: 50px;}
+#content .news .quick{position: absolute; left: 50%;
+  margin-left: 500px; top: 150px; padding: 20px 0;}
+#content .news .quick a{float: left; margin-right: 15px;}
+#content .news .quick a{color: #c8c8c8; font-size: 100px; transition: all .5s; display: block;}
+#content .news .quick a:hover{color: #007dc6; ;}
+
+/* 인재채용 */
+#content .together{
+width: 2000px;
+height: 591px; color: #fff;
+position: relative; overflow: hidden;
+left:50%; margin-left: -1000px;
+top:0; 
+background: url(../images/together.jpg); text-align: center;}
+#content .together .container {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 130px; margin-left: 0
+      }
+      #content .together  .center {
+        width: 180px;
+        height: 60px;
+        position: absolute;
+      }
+      #content .together .btn {
+        width: 180px;
+        height: 60px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #007dc6;
+        outline: none;
+        transition: 1s ease-in-out;
+      }
+      #content .together svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: 1s ease-in-out;
+      }
+      #content .together .btn:hover {
+        transition: 1s ease-in-out;
+        background: #007dc6;
+      }
+      #content .together .btn:hover svg {
+        stroke-dashoffset: -480;
+      }
+      #content .together  .btn span {
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+      }
+#content .together h3{font-size: 3.125em; margin: 100px 0 50px;}
+#content .together p{font-size: 2em; margin-top: 70px;}
+
+

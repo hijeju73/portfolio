@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+ html { font-size:14px;}
+body {
+ color:#333;
+ font-family: 'Noto Sans KR', sans-serif; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; display: block; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/* 헤더공통 */
+
+#headerArea{position: fixed; width: 100%; top:0; left:0; z-index: 100;}
+#headerArea .header_top{overflow: hidden;}
+#headerArea h1{float: left; margin:20px ;}
+#headerArea h1 a{display:block; width: 71px; height: 31px; background:url(../images/Hansol_tech_fff.png); text-indent:-9999%; overflow: hidden;}
+@media screen and (-webkit-min-device-pixel-ratio: 2){  
+    #headerArea h1 a{background:url(../images/Hansol_tech_fffx2.png);
+        background-size: 71px 31px;
+    }
+}
+
+
+#headerArea .menu_ham {
+    display: block;
+    float: right;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;z-index: 50; margin-top: 5px;
+}
+#headerArea .menu_ham span {
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 26px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, #headerArea.mn_open .menu_ham span::before, #headerArea.mn_open .menu_ham span::after {
+    background: #333;
+    transition: all .3s;
+}
+#headerArea.mn_open .menu_ham span {
+    background: rgba(0,0,0,0);
+    transition: all .3s;
+}
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .3s;
+}
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .3s;
+}
+
+/* nav 영역*/
+#gnb{ width: 100%; position: absolute;  right:-100%; top:0; opacity: 0; z-index:20;
+ padding-top: 130px; background:#fff url(../images/Hansol_techx2.png) center 30px  no-repeat; }
+#gnb>ul{margin:0 50px 50px;} 
+#gnb li{ font-weight:bold;}
+#gnb li h3 a{font-size: 1.6rem; font-weight: bold; padding: 15px 0; overflow: hidden;}
+#gnb li h3 a span{float: right;}
+#gnb li ul{ display: none; margin-left: 5px;}
+#gnb li ul li a{font-size: 1.2em; font-weight: normal;padding: 5px 0;}
+#gnb .last{border-bottom:1px solid #FFF}
+#gnb .nav_sns ul{overflow: hidden; width: 180px;  margin: 0 auto;}
+#gnb .nav_sns ul li{float: left; margin: 0 5px; width: 50px; height: 50px; background: #ccc; border-radius: 50%; }
+#gnb .nav_sns ul li i{font-size: 1.7em; display: block; text-align: center; margin-top: 15px;}
+
+/* 공통푸터영역 */
+
+/* footer */
+#footerArea{ background: #ebebeb; position: relative;height: 220px;}
+  #footerArea img{margin: 20px 0 20px 20px;}
+  #footerArea p{margin:20px 20px; line-height: 1.5em;}
+  #footerArea .footer_snsicon{position: absolute; right: 20px; top:30px}
+  #footerArea .footer_snsicon ul{overflow: hidden;}
+  #footerArea .footer_snsicon ul li{float: left; font-size: 25px; margin-left: 30px;}
+
+  #footerArea .topMove{width: 50px; height: 50px; border-radius: 50%;
+    background:#007dc6; position: fixed; right: 15px; bottom:50px ;z-index: 50;
+  display: none;}
+    #footerArea .topMove span{font-size: 1.1em;font-weight: bold;
+     color: #fff;margin: 13px 0 0 10px; display: block;}
+  

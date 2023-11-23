@@ -1,0 +1,158 @@
+/* about */
+
+/* 와이드 pc  */
+	
+#content{width:100%; margin:0; background:rgba(0,0,0,.9);position: relative;  }
+#content h2{position: absolute; top: -500px;
+width: 100%; text-align: center; font-size: 4em; color: #fff;}
+
+/* play */
+#content .play{overflow: hidden;}
+#content .play h3{font-size: 80px; color: #fff; width: 100%; margin: 100px 0 100px; text-align: center;}
+#content .play p{color: #fff; text-align: center; margin: 100px 0 100px;}
+#content .play p span{color: #666;}
+#content .play p strong{font-size: 1.2em;}
+#content .play ul{width: 94%; margin: 0 3%;
+display:grid; grid-template-columns: 1fr 1fr 1fr; grid-gap:40px 20px;}
+#content .play ul li img{width: 100%;}
+
+#content .play ul li .animated {
+   display: none
+ }
+ 
+ #content .play ul li:hover .animated {
+   display: inline
+ }
+ 
+ #content .play ul li:hover .static {
+   display: none
+ }
+
+   
+/* elemental */
+#content .elemental h3{font-size: 80px; color: #fff; width: 100%; margin: 100px 0 100px; text-align: center;}
+
+#content .elemental ul{overflow: hidden;width: 80%; margin: 0 10%;}
+#content .elemental ul li{float: left;}
+#content .elemental ul li img{width: 100%;}
+#content .elemental ul li:nth-child(1){width:30%}
+#content .elemental ul li:nth-child(2){width:70%}
+#content .elemental ul li p{border: 2px solid #fff;
+ box-sizing: border-box; padding: 20px; text-align: justify;
+ line-height: 1.5em; color: #fff;}
+ #content .elemental .guide{width: 90%;display: block; margin: 0 auto;}
+
+
+/* update */
+#content .update h3{font-size: 80px; color: #fff; width: 100%; margin: 100px 0 100px; text-align: center;}
+#content .update .swiper-slide{overflow: hidden;}
+#content .update .swiper-slide img{float: left;width: 40%; margin: 0 5%;}
+#content .update .swiper-slide p{color: #fff; width: 45%; float: right; margin: 0 5% 0 0; text-align: justify; line-height: 1.5em;color: #fff; }
+
+
+
+/* hoyomix */
+#content .hoyomix{}
+#content .hoyomix h3{font-size: 80px; color: #fff; width: 100%; margin: 100px 0 100px; text-align: center;}
+#content .hoyomix p{color: #fff; text-align: center; width: 90%;margin: 0 5% 50px; text-align:justify; line-height: 1.5em;}
+
+/* 유튭영상처리복붙 */
+.clip{overflow: hidden; width: 90%; margin: 0 auto;}
+
+.clip_part {
+    width:32.33%; float: left; margin: 0 .5% 50px;
+}
+
+.clip_part .contentArea {
+    position: relative;
+    width: 96%;
+    margin: 30px auto
+}
+
+.imgPart {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px
+}
+
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.clip_part .contentArea p {
+    color: #fff;
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.clip_part .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    border-radius: 94px;
+    background: rgba(0,0,0,.6)
+}
+
+.clip_part .imgPart:hover .playBnt {
+    background: rgba(255,0,0,.6)
+}
+
+.clip_part .playBnt img {
+    position: relative;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -20px    
+}
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  #content .play h3{font-size: 60px;margin: 50px 0;}
+	#content .play p{margin: 50px 0;}
+
+  #content .elemental h3{font-size: 60px;margin: 50px 0;}
+  #content .elemental ul {width: 90%;margin: 0 5% 50px;}
+
+  #content .update h3{font-size: 60px;margin: 50px 0;}
+  #content .hoyomix h3{font-size: 60px;margin: 50px 0;}
+  #content .hoyomix .clip_part {width: 48%;margin: 0 1% 50px;}
+  #content .hoyomix .clip_part:nth-child(3){display: none;} 
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	#content .play ul{grid-template-columns: 1fr 1fr;}
+  #content .play ul li:nth-child(3){display: none;}
+
+  #content .update .swiper-slide img{float: none;width: 80%; margin: 0 10% 30px; display: block; }
+#content .update .swiper-slide p{color: #fff; width: 80%; float: none; margin: 0 10%; }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content .play h3{font-size: 40px;}
+  #content .play p strong{font-size: 1.1em; line-height: 1.5em;}
+	#content .play ul{grid-template-columns: 1fr;}
+  #content .play ul li:nth-child(2){display: none;}
+
+  #content .elemental h3{font-size: 40px;}
+  #content .elemental ul {width: 96%;margin: 0 2% 50px;}
+
+  #content .update h3{font-size: 40px;}
+  #content .hoyomix h3{font-size: 40px;}
+  #content .hoyomix .clip_part {width: 98%;margin: 0 1% 50px;
+   float: none;}
+}

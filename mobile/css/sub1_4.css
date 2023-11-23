@@ -1,0 +1,9 @@
+/* 오시는길 */
+
+#content .contentArea{ width: 96%; margin: 0 2%; overflow: hidden;}
+
+#content .contentArea .map_plus{margin: 30px 0;}
+#content .contentArea .map_plus p{position: relative;}
+#content .contentArea .map_plus li{overflow: hidden;line-height: 2em;}
+#content .contentArea .map_plus li span{display: block; float: left;
+  margin-right: 30px;}

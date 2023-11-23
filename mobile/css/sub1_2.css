@@ -1,0 +1,6 @@
+/* CEO인사말 */
+
+#content .contentArea img{display: block; margin: 0 auto;}
+#content .contentArea p{margin: 20px 40px; text-align:justify;}
+#content .contentArea .ceo{font-size: 1.2em; font-weight: 600; text-align: right;
+       margin-bottom: 50px;}

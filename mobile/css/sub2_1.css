@@ -1,0 +1,15 @@
+#content .contentArea .pmd{width: 94%; margin: 0 3%;}
+#content .contentArea .pmd strong{display: block; text-align: center;}
+#content .contentArea .pmd p{margin-top: 5%; text-align:justify;}
+#content .contentArea .pmd p:nth-of-type(4){margin-bottom: 10%;}
+
+/* boxgrid Jquery*/
+.boxgrid{width: 94%; margin: 0 3%; margin-bottom:30px;}
+.boxgrid img{width: 100%;margin-bottom: 20px;}
+.boxgrid .boxcaption {} /* top값을 수정한다.  */
+.boxgrid dt{font-weight:bold;font-family:arial;font-size:1.2em; margin-bottom: 10px;}
+.boxgrid dd{font-size:1.1em}
+
+.boxgrid .boxcaption dd{line-height:1.5em}
+.boxgrid .boxcaption a{color:#FCF; text-decoration:none; }
+

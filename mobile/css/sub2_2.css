@@ -1,0 +1,12 @@
+/* es사업-led */
+
+#content .contentArea{width: 94%; margin: 0 3%;}
+
+#content .contentArea span{font-weight: bold; margin-bottom: 30px;}
+#content .contentArea p{margin-top: 10%; text-align: center;}
+#content .contentArea .big p{margin: 10% 0 10% 0; text-align: justify;}
+
+#content .contentArea .big img{position: relative; width: 50%; float: left; margin: 10px;}
+
+#content .contentArea .set{margin-bottom: 20%;}
+#content .contentArea .set p:nth-of-type(2){margin: 30px;}
